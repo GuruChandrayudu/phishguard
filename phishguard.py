@@ -1,7 +1,7 @@
 import streamlit as st
 from urllib.parse import urlparse
 
-st.title("🔐 PhishGuard - Phishing URL Detector")
+st.title("🔐 PhishGuard - Phishing URL")
 
 url = st.text_input("Enter the URL to check:")
 
@@ -33,3 +33,4 @@ if url:
         st.success("✅ This URL appears to be safe.")
     else:
         st.error("🚨 This URL may be phishing!")
+
